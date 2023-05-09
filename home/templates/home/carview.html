@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+<title> car view</title>
+</head>
+<body>
+    <!--{% load static  %}-->
+<div class="container  my-4" >
+   <div class="row">
+   <div class="col-md-4">
+       <div class="row">
+           <img src="/media/{{cardesc.image}}" width="310px" height="250px">
+       </div>
+   </div>
+   
+   <div class="col-md-8">
+    <h2>{{cardesc.car_name}}</h2>
+   
+    <p><b>Description</b></p>
+    <p><b>Rs. {{cardesc.price}}</b></p>
+    <p>{{cardesc.car_type}}</p>
+    <p>{{cardesc.engine}}</p>
+    <p>{{cardesc.mileage}}</p>
+    <p>{{cardesc.fuel_type}}</p>
+    </div>
+    </div>
+    
+
+</div>
+
+</body>
+</html>
